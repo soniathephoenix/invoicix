@@ -1,0 +1,46 @@
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    width: 83px;
+    padding: 1px;
+}
+
+#companyNameInput {
+    width: 300px;
+}
+
+header {
+    display: flex;
+    gap: 500px;
+    justify-content: center;
+    
+}
+
+#country {
+    width: 300px;
+}
+
+#topRight {
+    margin-top: 100px;
+    text-align:right;
+    
+}
+
+h4 {
+    margin-bottom: -6px;
+}
+
+h2 {
+    margin-bottom: 5px;
+}
+
+#topLeft {
+    margin-top: 100px;
+    text-align: left;
+    
+}
