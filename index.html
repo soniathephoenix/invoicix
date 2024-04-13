@@ -3,15 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Invoice</title>
 </head>
 <body>
-    <form action="/upload" method="post" enctype="multipart/form-data">
-        <label for="imageUpload">Select an image to upload:</label>
-        <input type="file" id="imageUpload" name="imageUpload">
-        <input type="submit" value="Upload Image">
-      </form>
-      
+    <h1>Invoice</h1>
     
+    <!-- Logo Upload Form -->
+    <form id="logoForm" enctype="multipart/form-data">
+        <label for="logoUpload">Upload Your Logo:</label>
+        <input type="file" id="logoUpload" name="logo" accept="image/*">
+        <button type="submit">Upload</button>
+    </form>
+
+    <!-- Display Uploaded Logo -->
+    <div id="logoContainer"></div>
+
+    <script>
+        document.getElementById('logoForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var formData = new FormData(this);
+            // You can handle the upload using AJAX or other methods here
+            // For simplicity, let's just display the uploaded logo
+            var logoFile = formData.get('logo');
+            var logoContainer = document.getElementById('logoContainer');
+            var reader = new FileReader();
+            reader.onload = function(event) {
+                var img = document.createElement('img');
+                img.src = event.target.result;
+                logoContainer.innerHTML = '';
+                logoContainer.appendChild(img);
+            };
+            reader.readAsDataURL(logoFile);
+        });
+    </script>
 </body>
 </html>
