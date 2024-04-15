@@ -44,3 +44,10 @@ h2 {
     text-align: left;
     
 }
+
+main {
+    display: flex;
+    gap: 500px;
+    justify-content: center;
+    
+}
