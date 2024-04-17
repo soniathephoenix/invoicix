@@ -51,3 +51,15 @@ main {
     justify-content: center;
     
 }
+
+#customerDetails {
+    margin-left: 5px;
+}
+
+#clientAddInfo {
+    margin-left: 5px;
+}
+
+#product {
+    display: flex;
+}
