@@ -1,5 +1,11 @@
 
 
+
+/* body {
+    display: flex;
+    justify-content: left;
+} */
+
 form {
     display: flex;
     flex-direction: column;
@@ -39,16 +45,19 @@ h2 {
     margin-bottom: 5px;
 }
 
-#topLeft {
+/* #topLeft {
     margin-top: 100px;
     text-align: left;
     
 }
 
 main {
-    display: flex;
-    gap: 500px;
-    justify-content: center;
+    
+        display: flex;
+        gap: 500px;
+        justify-content: center;
+        
+    
     
 }
 
@@ -62,4 +71,4 @@ main {
 
 #product {
     display: flex;
-}
+} */
